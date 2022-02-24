@@ -1,5 +1,7 @@
-pip install streamlit
-pip install streamlit-authenticator
+from collections import namedtuple
+import altair as alt
+import math
+import pandas as pd
 import streamlit as st
-import streamlit_authenticator as stauth
-st.title('Explore a dataset')
+
+#hi welcome
