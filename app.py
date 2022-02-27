@@ -1,6 +1,5 @@
 from ast import increment_lineno
 import streamlit as st
-import streamlit_authenticator as stauth
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
