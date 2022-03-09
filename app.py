@@ -36,10 +36,10 @@ def explore(df_reviews):
           
   
   
-  p=df_reviews['positive/negative']=np.where(df_reviews['polarity']>=0.05,True,False)
+  p=df_reviews['positive/negative']=np.where(df_reviews['polarity']>=0.5,True,False)
   st.write(df_reviews)
   k=df_reviews.loc[p]
-  k = k[(k['Star']<3) ]
+  k = k[(k['Star']<2) ]
   st.write(k)
   st.pyplot(sns.barplot(x='Star',y='polarity',data=k).figure)
   st.write('These users are to be suggested to change their stars as their reviews are good')
